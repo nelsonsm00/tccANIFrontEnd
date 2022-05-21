@@ -1,0 +1,725 @@
+/* FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+/************************************ CONTAINER ***************************************/
+.containerComponent {
+    background-color: #fff !important;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+    width: 95%;
+}
+
+.rodape {
+    background-color: #8890a3;
+    text-align: right;
+    color: #000;
+    font-weight: bold;
+    position: fixed;
+    padding-right: 2%;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .containerComponent {
+        border: none;
+        border-radius: 0px;
+        padding-right: 0px;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .rodape {
+        visibility: hidden;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+    .containerComponent {
+        font-size: 1rem !important;
+    }
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 17% !important;
+    margin-top: 1%;
+}
+
+.container {
+    max-width: 100% !important;
+    margin-left: 0px !important;
+}
+
+/************************************ SIMULACAO ***************************************/
+
+.simulacaoHead {
+    margin-left: 15% !important;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .simulacaoHead {
+        margin-left: 0px !important;
+    }
+}
+
+.simulacaoCrud {
+    text-align: right;
+    display: flow-root !important;
+}
+
+.moedaEstrangeira {
+    max-width: 100%;
+    text-transform: capitalize;
+}
+
+.badgeTotal {
+    background-color: #084aff;
+}
+
+/************************************ ACCORDION ***************************************/
+
+.cardAccoordion {
+    background-color: #1477b2 !important;
+    border-radius: 0px !important;
+    border: none;
+}
+
+.cardBoxAccoordion {
+    border: none !important;
+    border-radius: 0px !important;
+    max-width: calc(100% - 1px);
+}
+
+.textAccordion,
+.textAccordion:hover {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: Nunito;
+}
+
+/************************************ BOTOES ******************************************/
+
+.btn {
+    width: 100%;
+    font-family: Prompt !important;
+}
+
+.btn-info {
+    background-color: #1477b2 !important;
+}
+
+.btn-info:hover {
+    background-color: #126291 !important;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .btn {
+        margin-top: 5%;
+    }
+}
+
+.btnPergunta {
+    width: 30%;
+}
+
+#simulacaoheadButton {
+    padding-top: 0px !important;
+}
+
+/************************************ TABELAS ****************************************/
+
+.table td,
+.table th {
+    vertical-align: middle !important;
+}
+
+thead th {
+    background-color: #1477b2;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-family: Nunito;
+    font-size: 1.1rem;
+}
+
+tbody {
+    color: #000000;
+    font-weight: bold;
+    font-family: Montserrat !important;
+}
+
+tbody tr:hover {
+    background-color: #1477b2 !important;
+    color: #ffffff !important;
+}
+
+td.btnSpace {
+    background-color: #1477b2;
+}
+
+th.btnSpace {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+tr.lucro,
+tr.lucro:hover {
+    background-color: red !important;
+    color: #ffffff !important;
+}
+
+.tableTotal {
+    border: 0px !important;
+    max-width: calc(100% - 1px);
+}
+
+.tableListagemSimulacao,
+.tableListagemProduto,
+.tableListagemFormula {
+    width: 95% !important;
+    border: none !important;
+}
+
+/************************************ LABEL ****************************************/
+
+.labelCustom {
+    padding-top: 0.5em;
+}
+
+/* TABLET */
+@media (max-width: 1200px) {
+    .percentual {
+        padding-left: 0px !important;
+        max-width: 2.5% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .percentual {
+        padding-left: 0px !important;
+    }
+}
+
+/* DESK */
+@media (min-width: 576px) {
+    .percentual {
+        padding-left: 0px !important;
+    }
+}
+
+label {
+    color: #000000;
+    font-weight: bold;
+    font-family: Montserrat !important;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    label {
+        line-height: 2.5em !important;
+    }
+}
+
+/************************************ INPUT ***************************************/
+
+.inputHidden {
+    visibility: hidden;
+}
+
+.inputDado {
+    max-width: 100% !important;
+    padding-left: 0px !important;
+}
+
+input {
+    color: #1477b2 !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+}
+
+.inputMin {
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .inputPercentual {
+        padding-top: 0.3em;
+    }
+}
+
+/* TABLET */
+@media (min-width: 992px) {
+    .inputPercentual {
+        max-width: 14% !important;
+    }
+}
+
+.buscar {
+    width: 83% !important;
+    margin-left: 2.5%;
+    margin-top: 0.5rem;
+}
+
+.textareaTermo {
+    max-width: 100% !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #1477b2 !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+    height: 500px !important;
+}
+
+.textareaCorpo {
+    max-width: 100% !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #1477b2 !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+    height: 100px !important;
+}
+
+.textareaObservacao {
+    max-width: 100% !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #1477b2 !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+    height: 150px !important; 
+}
+
+.input-group {
+    margin-left: 1rem;
+}
+
+.input-group-text {
+    background-color: #1477b2 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.editor {
+    width: 100vw;
+    height: 50vh;
+}
+
+.editorBox {
+    background-color: #f5f5f5;
+}
+
+.formCheckPublic {
+    padding-top: .5rem;
+}
+
+
+/*********************************** SELECT ***************************************/
+
+.custom-select {
+    color: #1477b2 !important;
+    font-weight: bold !important;
+    font-family: Montserrat !important;
+}
+
+.selectOptions {
+    transform: rotate(90deg);
+    margin-left: 0px !important;
+    margin-top: 0px;
+}
+
+/************************************ MODAL ***************************************/
+
+.modal-title {
+    font-family: Nunito;
+    width: 100%;
+}
+
+.modal-body {
+    color: #000;
+    font-family: Montserrat !important;
+    font-weight: bold;
+}
+
+.modal-90w {
+    max-width: 90% !important;
+}
+
+.modal-100w {
+    max-width: 100% !important;
+    margin: 0px !important;
+}
+
+/************************************ ICONES **************************************/
+
+.editIcon {
+    color: rgb(226, 222, 0);
+}
+
+.deleteIcon {
+    color: rgb(145, 0, 0);
+}
+
+.addIcon {
+    color: rgb(37, 109, 37);
+}
+
+.addItem {
+    margin-top: -0.7rem;
+}
+
+.auxIcon {
+    color: #1477b2;
+    margin-left: 10px;
+}
+
+.searchIcon {
+    margin-top: 0.3rem
+}
+
+.auxArrow {
+    color: #000000;
+}
+
+.moveIcon {
+    color: #ffffff;
+    cursor: grabbing;
+}
+
+.crudIcon {
+    padding: 0px !important;
+}
+
+.orderAscClick {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZ0lEQVQ4y2NgGLKgquEuFxBPAGI2ahhWCsS/gDibUoO0gPgxEP8H4ttArEyuQYxAPBdqEAxPBImTY5gjEL9DM+wTENuQahAvEO9DMwiGdwAxOymGJQLxTyD+jgWDxCMZRsEoGAVoAADeemwtPcZI2wAAAABJRU5ErkJggg==);
+    filter: grayscale(1) brightness(2);
+}
+
+.orderDescClick {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII=);
+    filter: grayscale(1) brightness(2);
+}
+
+.orderDesc {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII=);
+}
+
+th .order {
+    cursor: pointer;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+/************************************ CARD ***************************************/
+
+/* DESK */
+@media (min-width: 576px) {
+    .card-group {
+        max-width: 30%;
+    }
+}
+
+.titleMoeda {
+    font-size: 1.5rem;
+    font-family: Nunito;
+}
+
+.bodyMoeda {
+    font-family: Nunito;
+}
+
+.itemFormula {
+    background-color: #1477b2 !important;
+    border: #000 solid 1px !important;
+}
+
+.item {
+    background-color: #1477b2 !important;
+}
+
+.card-title {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.formularioResposta {
+    background-color: #EEEEEE;
+}
+
+.itemRefeicao {
+    cursor: pointer !important;
+    font-weight: bold !important;
+    color: #FFF !important;
+    font-family: Nunito;
+    background-color: #1477b2 !important;
+}
+
+.itemRefeicaoSelecionado {
+    cursor: pointer !important;
+    font-weight: bold !important;
+    color: #000 !important;
+    font-family: Nunito;
+    background-color: #84bdf0 !important;
+}
+
+.cardRefeicao {
+    margin-top: 7%;
+}
+
+/************************************ NAV ****************************************/
+
+.nav-tabs {
+    font-family: Nunito;
+}
+
+.nav-tabs .nav-link {
+    margin-right: 5px;
+}
+
+#aba {
+    background-color: #84bdf0;
+}
+
+#abaSelecionada {
+    background-color: #049ee7 !important;
+}
+
+#aba, #abaSelecionada {
+    border: #8f9193 solid 1px;
+    color: #000;
+}
+
+#abaDisable {
+    background-color: #d3dadd !important;
+}
+
+/************************************ MENU ***************************************/
+
+.bm-burger-button {
+    position: absolute;
+    width: 26px;
+    height: 20px;
+    left: 1%;
+    top: 5.5%;
+}
+
+@media (max-width: 576px) {
+    .bm-burger-button {
+        position: absolute;
+        width: 100%;
+        height: 3%;
+        left: 0px;
+        top: 5px;
+        background-repeat: no-repeat;
+    }
+
+    #react-burger-menu-btn {
+        background-color: transparent !important;
+    }
+
+    .bm-burger-bars {
+        background-color: #1477b2 !important;
+        max-width: 5%;
+        max-height: 20px !important;
+        margin-left: 10px;
+    }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #000000;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #1477b2;
+    opacity: 1 !important;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #ffffff;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 0px !important;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #1477b2;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #000000;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+a.menu-item,
+a.menu-item:hover,
+a.menu-item:visited {
+    color: #fff !important;
+    font-weight: bold;
+    font-family: Montserrat;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+#outer-container, #page-wrap {
+    min-height: 97vh;
+}
+
+/************************************ TITULO *************************************/
+
+.titleBox {
+    width: 100%;
+    background-color: #ececec;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 2%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Questrial;
+}
+
+/************************************ BODY ***************************************/
+
+body {
+    background-color: #1477b2 !important;
+    background-image: url("bgTextura.jpg");
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    margin: 0;
+
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    body {
+        background-color: transparent !important;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow-x: hidden;
+    }
+}
+/************************************ LOGIN ***************************************/
+/* TABLET */
+.login {
+    max-width: 30%;
+    margin-top: 10%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    .login {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1295px) {
+    .login {
+        max-width: 70%;
+    }
+}
+
+/************************************ SPINNER************************************/
+.spinnerBox {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.5;
+    z-index: 999999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.spinner {
+    opacity: 1;
+    position: fixed;
+    top: calc(100vh / 2);
+}
+
+/************************************ INFO ****************************************/
+.textoInfo {
+    text-align: justify;
+    line-height: 30px;
+    font-family: Questrial;
+    font-size: 16px;
+}
+
+.textoInfoPrincipal {
+    border-right: 1px solid #000;
+}
+
+.tituloInfo {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-family: Questrial;
+}
