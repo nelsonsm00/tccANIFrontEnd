@@ -12,7 +12,7 @@ class RequestService {
     static DELETE = "DELETE";
 
     static getHeaders(headers = {}) {
-        //headers["Access-Control-Allow-Origin"] = "*";
+        headers["Access-Control-Allow-Origin"] = "*";
         headers.Conta = Cache.conta.get;
         headers.Authorization = "Bearer " + Cache.token.get;
         return headers;
